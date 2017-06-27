@@ -1,0 +1,22 @@
+﻿@model IEnumerable<WhiteBoard2.Models.Comment>
+
+@foreach (var item in Model)
+{
+    <div class="form-comment">
+        <div class="comment">
+            <div class="commentName">
+                @Html.DisplayFor(modelItem => item.CommentName)
+            </div>
+            <div class="commentTime">
+                @Html.DisplayFor(modelItem => item.CommentTime)
+            </div>
+            
+        </div>
+        <hr>
+        <div class="comment">
+       
+            @Html.DisplayFor(modelItem => item.CommentText)
+            
+        </div>
+    </div>
+}

@@ -1,0 +1,15 @@
+﻿@model IEnumerable<WhiteBoard2.Models.ViewedPost>
+
+        @foreach (var item in Model)
+        {
+
+            <div id="seen@(item.ViewedPostId)" class="list-group-item">
+
+                    @Html.DisplayFor(modelItem => item.ViewedByName)
+
+            </div>
+            <hr />
+
+        }
+    
+
